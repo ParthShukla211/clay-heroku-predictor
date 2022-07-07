@@ -6,7 +6,7 @@ from catboost import CatBoostRegressor
 
 
 
-pipe = pickle.load(open('cat_model.pkl','rb'))
+pipe = pickle.load(open('catboost_model.pkl','rb'))
 st.title('Clay Predictor')
 
 
