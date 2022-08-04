@@ -23,7 +23,7 @@ Soil_Stones=st.number_input('Soil_Stones')
 
 
 # 'pH(CaCl2)':[pH(CaCl2)],'pH(H2O)':[pH(H2O)],
-if st.button('Predict Clay'):
+if st.button('Predict'):
       input=pd.DataFrame({'Coarse':[Coarse],'cacl2ph':[cacl2ph],'h2oph':[h2oph],'EC':[EC],'OC':[OC],'CaCO3':[CaCO3],'P':[P],'N':[N],'K':[K],'Soil_Stones':[Soil_Stones]})
       result = pipe.predict(input)
       st.success('THE CLAY FOR GIVEN DATA WILL BE {}'.format(result))
